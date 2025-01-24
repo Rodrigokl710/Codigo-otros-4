@@ -1,0 +1,42 @@
+package Revision;
+
+import java.util.Scanner;
+
+public class codigoOtros4 {
+	public static void main(String[] args) {
+	    Scanner s = new Scanner(System.in);
+	    
+	    System.out.println("Turno del jugador 1 (introduzca piedra, papel o tijeras): ");
+	    Scanner s1 = new Scanner(System.in);
+	    String j1 = s.nextLine();
+	    
+	    System.out.println("Turno del jugador 2 (introduzca piedra, papel o tijeras): ");
+	    Scanner s2 = new Scanner(System.in);
+	    String j2 = s.nextLine();
+	
+	    s.close();
+	
+	    if (j1 == j2){
+	      System.out.println("Empate");
+	    }else {
+	      switch(j1) {
+	        case "piedra":
+	          if (j2 == "tijeras") {
+	        	  System.out.println("Gana jugador 1");
+	          }
+
+	        case "papel":
+	          if (j2 == "piedra") {
+	        	  System.out.println("Gana jugador 1");
+	          }
+	        case "tijeras":
+	          if (j2=="papel"){
+	        	  System.out.println("Gana jugador 2");
+	          }
+	          break;
+	        default:
+	      }
+	     
+	    
+	
+	}}}
